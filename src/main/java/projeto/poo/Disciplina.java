@@ -1,11 +1,16 @@
 package projeto.poo;
 
+//Questão 1 
 public class Disciplina {
+
+    //Atributos codigo,nome,semestre
     private int codigo;
 
     private String nome;
 
     private int semestre;
+
+    //Metodos de acesso aos atributos
 
     public int getCodigo() {
         return codigo;
