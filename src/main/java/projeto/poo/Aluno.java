@@ -6,6 +6,11 @@ public class Aluno extends Pessoa {
 
     private String matricula;
 
+    public Aluno(String cpf, String nome, int idade, String matricula) {
+        super(cpf, nome, idade);
+        this.matricula = matricula;
+    }
+
     public String getMatricula() {
         return matricula;
     }
@@ -16,6 +21,11 @@ public class Aluno extends Pessoa {
 
     public void pagarMensalidade(double valor) {
         System.out.println("Mensalidade paga no valor de " + valor);
+    }
+
+    @Override
+    public String toString() {
+        return "Aluno [nome=" + super.getNome() + ", matricula=" + matricula + "]";
     }
 
 }

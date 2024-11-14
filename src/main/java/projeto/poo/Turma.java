@@ -7,13 +7,22 @@ import java.util.ArrayList;
 public class Turma {
     private int codigo;
 
-    private String disciplina;
+    // Como já temos as classes Professor, Aluno e Disciplina podemos usa-los como
+    // atributos de
+    // nossas outras classes
+    private Disciplina disciplina;
 
-    //Como já temos as classes Professor e aluno podemos usa-los como atributos de nossas outras classes
     private Professor professor;
 
-    //Nesse caso a questão pede uma lista de alunos
+    // Nesse caso a questão pede uma lista de alunos
     private ArrayList<Aluno> alunos;
+
+    public Turma(int codigo, Disciplina disciplina, Professor professor) {
+        this.codigo = codigo;
+        this.disciplina = disciplina;
+        this.professor = professor;
+        this.alunos = new ArrayList<>();
+    }
 
     public int getCodigo() {
         return codigo;
@@ -23,11 +32,11 @@ public class Turma {
         this.codigo = codigo;
     }
 
-    public String getDisciplina() {
+    public Disciplina getDisciplina() {
         return disciplina;
     }
 
-    public void setDisciplina(String disciplina) {
+    public void setDisciplina(Disciplina disciplina) {
         this.disciplina = disciplina;
     }
 
@@ -39,8 +48,7 @@ public class Turma {
         this.professor = professor;
     }
 
-
-    //A partir daqui são métodos para manipular nossa lista de alunos.
+    // A partir daqui são métodos para manipular nossa lista de alunos.
     public void adicionarAluno(Aluno aluno) {
         this.alunos.add(aluno);
     }
@@ -51,6 +59,14 @@ public class Turma {
 
     public void listarAluno() {
         System.out.println(this.alunos);
+    }
+
+    @Override
+    public String toString() {
+        return "Turma [codigo=" + codigo +
+                ", disciplina=" + disciplina.getNome() +
+                ", professor=" + professor.getNome() +
+                ", alunos=" + alunos + "]";
     }
 
 }

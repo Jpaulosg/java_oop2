@@ -3,14 +3,20 @@ package projeto.poo;
 //Questão 1 
 public class Disciplina {
 
-    //Atributos codigo,nome,semestre
+    // Atributos codigo,nome,semestre
     private int codigo;
 
     private String nome;
 
     private int semestre;
 
-    //Metodos de acesso aos atributos
+    // Metodos de acesso aos atributos
+
+    public Disciplina(int codigo, String nome, int semestre) {
+        this.codigo = codigo;
+        this.nome = nome;
+        this.semestre = semestre;
+    }
 
     public int getCodigo() {
         return codigo;
@@ -36,5 +42,4 @@ public class Disciplina {
         this.semestre = semestre;
     }
 
-    
 }
