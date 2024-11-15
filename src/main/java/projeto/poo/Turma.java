@@ -2,6 +2,10 @@ package projeto.poo;
 
 import java.util.ArrayList;
 
+import projeto.poo.q1.Disciplina;
+import projeto.poo.q3.Aluno;
+import projeto.poo.q3.Professor;
+
 //Questão 04
 //Associação e composição de objetos;
 public class Turma {

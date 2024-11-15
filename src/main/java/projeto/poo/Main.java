@@ -1,5 +1,12 @@
 package projeto.poo;
 
+import projeto.poo.q1.Disciplina;
+import projeto.poo.q3.Aluno;
+import projeto.poo.q3.Bolsista;
+import projeto.poo.q3.Professor;
+import projeto.poo.q3.Regular;
+import projeto.poo.q3.Visitante;
+
 public class Main {
     public static void main(String[] args) {
         Disciplina matematica = new Disciplina(1, "Matematica", 1);

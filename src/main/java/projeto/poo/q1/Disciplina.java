@@ -1,4 +1,4 @@
-package projeto.poo;
+package projeto.poo.q1;
 
 //Questão 1 
 public class Disciplina {

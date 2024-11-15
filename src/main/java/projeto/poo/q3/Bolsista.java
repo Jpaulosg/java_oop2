@@ -1,4 +1,4 @@
-package projeto.poo;
+package projeto.poo.q3;
 
 //Questão 3
 //Bolsista é derivado de Aluno ou seja extende a classe Pessoa

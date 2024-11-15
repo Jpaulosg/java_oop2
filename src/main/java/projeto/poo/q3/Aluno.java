@@ -1,4 +1,6 @@
-package projeto.poo;
+package projeto.poo.q3;
+
+import projeto.poo.q1.Pessoa;
 
 //Questão 3
 //Aluno é derivado de Pessoa ou seja extende a classe Pessoa possuindo assim os seus atributos

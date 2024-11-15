@@ -1,4 +1,4 @@
-package projeto.poo;
+package projeto.poo.q1;
 
 //Questão 1 
 public abstract class Pessoa {
@@ -11,7 +11,6 @@ public abstract class Pessoa {
     private int idade;
 
     // Metodos de acesso aos atributos
-
     public Pessoa(String cpf, String nome, int idade) {
         this.cpf = cpf;
         this.nome = nome;
